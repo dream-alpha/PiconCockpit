@@ -1,0 +1,26 @@
+<keymap>
+	<!-- keymap.xml
+		m = make -> Normal 
+		key press b = break -> Key released l = long -> Long key press r = repeat 
+		-> Key locked (pressed continuously) "m" arrives once, as soon as the key 
+		is pressed "b" arrives as soon as the key is released. "l" arrives after 
+		5 repeats, but then only once (repeat still arrives) "r" arrives after "m", 
+		when the key is pressed continuously until the key is released Flags can 
+		be combined, eg. flags="mr" -->
+	<map context="PICConfigActions">
+		<key id="KEY_RED" mapto="RED" flags="mr"/>
+		<key id="KEY_GREEN" mapto="GREEN" flags="mr"/>
+		<key id="KEY_BLUE" mapto="BLUE" flags="mr"/>
+		<key id="KEY_YELLOW" mapto="YELLOW" flags="mr"/>
+                <key id="KEY_CHANNELUP" mapto="BQTPLUS" flags="mr" />
+                <key id="KEY_CHANNELDOWN" mapto="BQTMINUS" flags="mr" />
+	</map>
+	<map context="PICActions">
+		<key id="KEY_EXIT" mapto="EXIT" flags="m"/>
+		<key id="KEY_RED" mapto="RED" flags="mr"/>
+		<key id="KEY_GREEN" mapto="GREEN" flags="mr"/>
+		<key id="KEY_BLUE" mapto="BLUE" flags="mr"/>
+		<key id="KEY_YELLOW" mapto="YELLOW" flags="mr"/>
+		<key id="KEY_MENU" mapto="MENU" flags="mr"/>
+	</map>
+</keymap>

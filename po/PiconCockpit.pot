@@ -1,0 +1,242 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"#-#-#-#-#  de.po (PiconCockpit)  #-#-#-#-#\n"
+"Project-Id-Version: PiconCockpit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-01 11:08+0100\n"
+"PO-Revision-Date: 2021-02-01 11:20+0100\n"
+"Last-Translator: dream-alpha\n"
+"Language-Team: German (Germany)\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Loco-Source-Locale: en-US\n"
+"X-Loco-Project-Id: 47158\n"
+"X-Loco-Api-Version: 1.0.19 20180501-1\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+"#-#-#-#-#  de.po (Common)  #-#-#-#-#\n"
+"Project-Id-Version: Common\n"
+"POT-Creation-Date: 2021-01-31 10:31+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: dream-alpha\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ConfigScreenInit.py:49
+msgid "PLUGIN"
+msgstr ""
+
+#: ConfigScreenInit.py:50
+msgid "About"
+msgstr ""
+
+#: ConfigScreenInit.py:50
+msgid "Information about the plugin."
+msgstr ""
+
+#: ConfigScreenInit.py:51
+msgid "COCKPIT"
+msgstr ""
+
+#: ConfigScreenInit.py:52
+msgid "Picon directory"
+msgstr ""
+
+#: ConfigScreenInit.py:52
+msgid "Select the directory the picons are stored in."
+msgstr ""
+
+#: ConfigScreenInit.py:53
+msgid "Picon server"
+msgstr ""
+
+#: ConfigScreenInit.py:53
+msgid "Select the picon server."
+msgstr ""
+
+#: ConfigScreenInit.py:54
+msgid "Download all picons"
+msgstr ""
+
+#: ConfigScreenInit.py:54
+msgid "Should all picons be downloaded vs. just the picons in favorites?"
+msgstr ""
+
+#: ConfigScreenInit.py:55
+msgid "Delete picon directory"
+msgstr ""
+
+#: ConfigScreenInit.py:55
+msgid "Should the picon directory be cleaned before the download?"
+msgstr ""
+
+#: ConfigScreenInit.py:56
+msgid "FILTER"
+msgstr ""
+
+#: ConfigScreenInit.py:57
+msgid "Satellite"
+msgstr ""
+
+#: ConfigScreenInit.py:57
+msgid "Select the satellite."
+msgstr ""
+
+#: ConfigScreenInit.py:58
+msgid "Creator"
+msgstr ""
+
+#: ConfigScreenInit.py:58
+msgid "Select the creator."
+msgstr ""
+
+#: ConfigScreenInit.py:59
+msgid "Size"
+msgstr ""
+
+#: ConfigScreenInit.py:59
+msgid "Select the picon size."
+msgstr ""
+
+#: ConfigScreenInit.py:60
+msgid "Color depth"
+msgstr ""
+
+#: ConfigScreenInit.py:60
+msgid "Select the color depth."
+msgstr ""
+
+#: ConfigScreenInit.py:61
+msgid "DEBUG"
+msgstr ""
+
+#: ConfigScreenInit.py:62
+msgid "Log level"
+msgstr ""
+
+#: ConfigScreenInit.py:62
+msgid "Select the debug log level."
+msgstr ""
+
+#: PiconCockpit.py:57
+msgid "Menu"
+msgstr ""
+
+#: PiconCockpit.py:58 PiconCockpit.py:59 PiconCockpit.py:70
+msgid "Exit"
+msgstr ""
+
+#: PiconCockpit.py:60 PiconCockpit.py:69
+msgid "Download"
+msgstr ""
+
+#: PiconCockpit.py:66 plugin.py:38
+msgid "PiconCockpit"
+msgstr ""
+
+#: PiconCockpit.py:84
+msgid "Picon path directory does not exist: "
+msgstr ""
+
+#: PiconCockpit.py:88
+msgid "Picon server access failed"
+msgstr ""
+
+#: PiconDownloadProgress.py:39
+msgid "Picon Download"
+msgstr ""
+
+#: PiconDownloadProgress.py:50 FileProgress.py:145
+msgid "Please wait"
+msgstr ""
+
+#: PiconDownloadProgress.py:67
+msgid "Initializing"
+msgstr ""
+
+#: plugin.py:39
+msgid "Manage Picons"
+msgstr ""
+
+#: ConfigScreen.py:73 FileProgress.py:45
+msgid "Cancel"
+msgstr ""
+
+#: ConfigScreen.py:74
+msgid "Save"
+msgstr ""
+
+#: ConfigScreen.py:75
+msgid "Defaults"
+msgstr ""
+
+#: ConfigScreen.py:132
+msgid "Really close without saving settings?"
+msgstr ""
+
+#: ConfigScreen.py:175
+msgid "Setup"
+msgstr ""
+
+#: ConfigScreen.py:181
+msgid "Loading default settings will overwrite all settings, really load them?"
+msgstr ""
+
+#: ConfigScreen.py:246
+msgid "Some changes require a GUI restart"
+msgstr ""
+
+#: ConfigScreen.py:246
+msgid "Restart GUI now?"
+msgstr ""
+
+#: ConfigScreen.py:269
+msgid "Bookmarks"
+msgstr ""
+
+#: ConfigScreen.py:270
+msgid "Select directory"
+msgstr ""
+
+#: ConfigScreen.py:286
+msgid "Path does not exist"
+msgstr ""
+
+#: FileProgress.py:46
+msgid "Close"
+msgstr ""
+
+#: FileProgress.py:48
+msgid "Hide"
+msgstr ""
+
+#: FileProgress.py:86
+msgid "Cancelling, please wait"
+msgstr ""
+
+#: FileProgress.py:115
+msgid "Processing"
+msgstr ""
+
+#: FileProgress.py:115
+msgid "of"
+msgstr ""
+
+#: FileProgress.py:123
+msgid "Done"
+msgstr ""
+
+#: FileProgress.py:139 FileProgress.py:155
+msgid "Cancelled"
+msgstr ""

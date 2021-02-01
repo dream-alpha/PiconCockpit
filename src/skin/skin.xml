@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2018-2021 by dream-alpha
+-->
+<skin>
+	<listboxcontent>
+		<config onPixmap="skin_default/switch_on.svg" offPixmap="skin_default/switch_off.svg" size="60,32"/>
+	</listboxcontent>
+
+	<layouts>
+		<layout name="Color_Buttons">
+			<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg"
+				position="10,0" size="300,70" alphatest="blend"/>
+			<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg"
+				position="310,0" size="300,70" alphatest="blend"/>
+			<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg"
+				position="610,0" size="300,70" alphatest="blend"/>
+			<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg"
+				position="910,0" size="300,70" alphatest="blend"/>
+		</layout>
+		<layout name="Color_Buttons_Labels">
+			<widget font="Regular;30" halign="center" name="key_red" position="10,0"
+				foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+				size="300,70" transparent="1" valign="center" zPosition="1"/>
+			<widget font="Regular;30" halign="center" name="key_green" position="310,0"
+				foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+				size="300,70" transparent="1" valign="center" zPosition="1"/>
+			<widget font="Regular;30" halign="center" name="key_yellow" position="610,0"
+				foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+				size="300,70" transparent="1" valign="center" zPosition="1"/>
+			<widget font="Regular;30" halign="center" name="key_blue" position="910,0"
+				foregroundColor="white" shadowColor="black" shadowOffset="-2,-2"
+				size="300,70" transparent="1" valign="center" zPosition="1"/>
+		</layout>
+		<layout name="Time">
+			<widget font="Regular;34" halign="right" valign="center" position="1650,0"
+				render="Label" size="120,70" source="global.CurrentTime">
+				<convert type="ClockToText">Default</convert>
+			</widget>
+		</layout>
+		<layout name="Date">
+			<widget font="Regular;34" halign="right" valign="center" position="1240,0"
+				render="Label" size="400,70" source="global.CurrentTime">
+				<convert type="ClockToText">Date</convert>
+			</widget>
+		</layout>
+	</layouts>
+
+	<screen name="PICConfigScreen" position="center,110" size="1800,930">
+		<layout name="Color_Buttons"/>
+		<layout name="Color_Buttons_Labels"/>
+		<layout name="Date"/>
+		<layout name="Time"/>
+		<eLabel backgroundColor="grey" position="10,80" size="1780,1"/>
+		<widget enableWrapAround="1" name="config" itemHeight="45"
+			position="10,90" scrollbarMode="showOnDemand" size="1780,630"/>
+		<eLabel backgroundColor="grey" position="10,730"
+			size="1780,1"/>
+		<widget font="Regular;32" halign="center" position="10,740"
+			render="Label" size="1780,180" source="help" valign="center"/>
+	</screen>
+
+	<screen name="PiconCockpit" position="center,110" size="1800,930">
+		<layout name="Color_Buttons"/>
+		<layout name="Color_Buttons_Labels"/>
+		<layout name="Date"/>
+		<layout name="Time"/>
+		<widget name="picon" scale="center" position="1380,100" size="400,240" />
+		<widget enableWrapAround="1" position="10,100" render="Listbox"
+			scrollbarMode="showOnDemand" size="1360,800" source="list">
+			<convert type="TemplatedMultiContent">
+				{
+					"template": [
+						MultiContentEntryText(pos=(5,0), size=(1365,40), flags=RT_VALIGN_CENTER, text=0),
+					],
+					"fonts": [gFont("Regular",29)],
+					"itemHeight":40
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<screen name="PiconDownloadProgress" position="center,center" size="1220,305" title="">
+		<layout name="Color_Buttons"/>
+		<layout name="Color_Buttons_Labels"/>
+		<eLabel backgroundColor="grey" position="10,75" size="1200,1"/>
+		<widget name="operation" position="10,95" size="1200,35"
+			font="Regular;32" halign="left" valign="center" transparent="1"/>
+		<widget name="slider1" position="10,150" size="1200,25"/>
+		<widget name="name" position="10,199" size="1200,35"
+			font="Regular;32" halign="left" valign="center" transparent="1"/>
+		<widget name="status" position="10,250" size="1200,35"
+			font="Regular;32" halign="left" valign="center" transparent="1"/>
+	</screen>
+</skin>
