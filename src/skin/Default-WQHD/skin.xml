@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<skin>
+	<listboxcontent>
+		<config offPixmap="skin_default/switch_off.svg" onPixmap="skin_default/switch_on.svg" size="80,43"/>
+	</listboxcontent>
+	<screen name="PICCockpitContextMenu" position="0,0" size="1600,1440" title="">
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="1600,648" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,648" size="1600,144" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,792" size="1600,648" zPosition="-1"/>
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="1547,57" source="Title" transparent="1"/>
+		<widget enableWrapAround="1" itemHeight="60" position="27,120" render="Listbox" scrollbarMode="showOnDemand" size="1547,1333" source="menu" transparent="1">
+			<convert type="StringList"/>
+		</widget>
+		<ePixmap pixmap="Shadow-FHD/skin_default/icons/arrow_down.svg" position="center,1347" size="80,80"/>
+	</screen>
+	<screen backgroundColor="#000000" flags="wfNoBorder" name="PICConfigScreen" position="0,center" size="1600,1440">
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="1600,648" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,648" size="1600,144" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,792" size="1600,648" zPosition="-1"/>
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="1547,57" source="Title" transparent="1"/>
+		<widget enableWrapAround="1" itemHeight="60" name="config" position="27,120" scrollbarMode="showOnDemand" size="1547,1020" transparent="1"/>
+		<widget font="Regular;40" halign="center" position="27,1173" render="Label" size="1547,160" source="help" transparent="1" valign="center"/>
+		<widget font="Regular;35" halign="center" name="key_red" position="0,1373" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_green" position="400,1373" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_yellow" position="800,1373" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_blue" position="1200,1373" size="400,47" transparent="1"/>
+		<eLabel backgroundColor="#ff0000" position="0,1426" size="400,13"/>
+		<eLabel backgroundColor="#669900" position="400,1426" size="400,13"/>
+		<eLabel backgroundColor="#e5b243" position="800,1426" size="400,13"/>
+		<eLabel backgroundColor="#3366cc" position="1200,1426" size="400,13"/>
+	</screen>
+	<screen flags="wfNoBorder" name="PICPiconCockpit" position="center,center" size="2560,1440">
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="2507,57" source="Title" transparent="1"/>
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="2560,648" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,648" size="2560,144" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,792" size="2560,648" zPosition="-1"/>
+		<widget name="preview" position="1987,160" scale="aspect" size="533,320"/>
+		<widget font="Regular;40" itemHeight="53" name="list" position="40,160" scrollbarMode="showOnDemand" size="1907,1147" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_red" position="0,1373" size="640,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_green" position="640,1373" size="640,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_yellow" position="1280,1373" size="640,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_blue" position="1920,1373" size="640,47" transparent="1"/>
+		<eLabel backgroundColor="#ff0000" position="0,1426" size="640,13"/>
+		<eLabel backgroundColor="#669900" position="640,1426" size="640,13"/>
+		<eLabel backgroundColor="#e5b243" position="1280,1426" size="640,13"/>
+		<eLabel backgroundColor="#3366cc" position="1920,1426" size="640,13"/>
+	</screen>
+	<screen flags="wfNoBorder" name="PICPiconDownloadProgress" position="center,center" size="1600,427" title="">
+		<widget font="Bold;43" noWrap="1" position="27,40" render="Label" size="1547,57" source="Title" transparent="1"/>
+		<ePixmap gradient="#ff000000,#131a1d,vertical" position="0,0" size="1600,192" zPosition="-1"/>
+		<eLabel backgroundColor="#131a1d" position="0,192" size="1600,42" zPosition="-1"/>
+		<ePixmap gradient="#131a1d,#ff000000,vertical" position="0,234" size="1600,192" zPosition="-1"/>
+		<widget font="Regular;43" halign="left" name="operation" position="27,120" size="1547,57" transparent="1" valign="center"/>
+		<widget name="slider1" position="27,200" size="1547,33"/>
+		<widget font="Regular;43" halign="left" name="name" position="27,256" size="1547,57" transparent="1" valign="center"/>
+		<widget font="Regular;43" halign="left" name="status" position="27,447" size="1547,57" transparent="1" valign="center"/>
+		<widget font="Regular;35" halign="center" name="key_red" position="0,360" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_green" position="400,360" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_yellow" position="800,360" size="400,47" transparent="1"/>
+		<widget font="Regular;35" halign="center" name="key_blue" position="1200,360" size="400,47" transparent="1"/>
+		<eLabel backgroundColor="#ff0000" position="0,413" size="400,13"/>
+		<eLabel backgroundColor="#669900" position="400,413" size="400,13"/>
+		<eLabel backgroundColor="#e5b243" position="800,413" size="400,13"/>
+		<eLabel backgroundColor="#3366cc" position="1200,413" size="400,13"/>
+	</screen>
+</skin>

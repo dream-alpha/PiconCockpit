@@ -1,0 +1,9 @@
+	<screen name="PICPiconDownloadProgress" position="center,center" size="1220,305" title="">
+		<xmlinc file="screenpart_ColorButtons" position="10,5" width="300"/>
+		<xmlinc file="screenpart_ColorButtonsLabels" position="10,5" width="300"/>
+		<eLabel backgroundColor="grey" position="10,75" size="1200,1"/>
+		<widget font="Regular;32" halign="left" name="operation" position="10,90" size="1200,43" transparent="1" valign="center"/>
+		<widget name="slider1" position="10,150" size="1200,25"/>
+		<widget font="Regular;32" halign="left" name="name" position="10,192" size="1200,43" transparent="1" valign="center"/>
+		<widget font="Regular;32" halign="left" name="status" position="10,245" size="1200,43" transparent="1" valign="center"/>
+	</screen>

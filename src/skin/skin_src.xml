@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<skin>
+	<xmlinc file="listboxcontent"/>
+	<xmlinc file="screen_CockpitContextMenu"/>
+	<xmlinc file="screen_ConfigScreen"/>
+	<xmlinc file="screen_PiconCockpit"/>
+	<xmlinc file="screen_PiconDownloadProgress"/>
+</skin>
