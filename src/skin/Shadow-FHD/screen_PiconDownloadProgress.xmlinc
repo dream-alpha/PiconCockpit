@@ -1,0 +1,9 @@
+	<screen flags="wfNoBorder" name="PICPiconDownloadProgress" position="center,center" size="1200,320" title="">
+		<xmlinc file="screenpart_TitleOnly" source="Title"/>
+		<xmlinc file="screenpart_Background"/>
+		<widget font="Regular;32" halign="left" name="operation" position="20,90" size="eval($screen_width-40),43" transparent="1" valign="center"/>
+		<widget name="slider1" position="20,150" size="eval($screen_width-40),25"/>
+		<widget font="Regular;32" halign="left" name="name" position="20,192" size="eval($screen_width-40),43" transparent="1" valign="center"/>
+		<widget font="Regular;32" halign="left" name="status" position="20,335" size="eval($screen_width-40),43" transparent="1" valign="center"/>
+		<xmlinc file="screenpart_4Buttons_name" position="0,eval($screen_height-50)" width="eval($screen_width/4)"/>
+	</screen>

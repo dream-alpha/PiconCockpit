@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "***********************************"
+echo "*          PiconCockpit           *"
+echo "*               by                *"
+echo "*          dream-alpha            *"
+echo "***********************************"
+echo ""
+echo "Plugin PiconCockpit installed successfully."
+echo "Please restart DreamOS now!"
+echo ""
+exit 0

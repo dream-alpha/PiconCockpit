@@ -1,0 +1,7 @@
+	<screen flags="wfNoBorder" name="PICPiconCockpit" position="center,center" size="2560,1440">
+		<xmlinc file="screenpart_TitleOnly" source="Title"/>
+		<xmlinc file="screenpart_Background"/>
+		<widget name="preview" position="eval($screen_width-40-533),160" scale="aspect" size="533,320"/>
+		<widget font="Regular;40" itemHeight="53" name="list" position="40,160" scrollbarMode="showOnDemand" size="eval($screen_width-80-40-533),eval($screen_height-160-133)" transparent="1"/>
+		<xmlinc file="screenpart_4Buttons_name" position="0,eval($screen_height-67)" width="eval($screen_width/5)"/>
+	</screen>

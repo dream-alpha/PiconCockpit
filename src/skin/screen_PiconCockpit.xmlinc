@@ -1,0 +1,7 @@
+	<screen name="PICPiconCockpit" position="center,110" size="1800,930">
+		<xmlinc file="screenpart_ColorButtons" position="10,5" width="300"/>
+		<xmlinc file="screenpart_ColorButtonsLabels" position="10,5" width="300"/>
+		<xmlinc file="screenpart_DateTime"/>
+		<widget name="preview" position="1380,100" scale="aspect" size="400,240"/>
+		<widget font="Regular;30" itemHeight="40" name="list" position="10,100" scrollbarMode="showOnDemand" size="1300,800" transparent="1"/>
+	</screen>

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<skin>
+	<listboxcontent>
+		<config offPixmap="skin_default/switch_off.svg" onPixmap="skin_default/switch_on.svg" size="60,32"/>
+	</listboxcontent>
+	<screen name="PICCockpitContextMenu" position="center,center" size="840,730" title="">
+		<widget enableWrapAround="1" itemHeight="45" position="10,10" render="Listbox" scrollbarMode="showOnDemand" size="820,680" source="menu">
+			<convert type="StringList"/>
+		</widget>
+	</screen>
+	<screen name="PICConfigScreen" position="center,110" size="1800,930" title="">
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="10,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="310,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="610,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="910,5" size="300,70"/>
+		<widget backgroundColor="#f23d21" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_red" position="10,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#389416" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_green" position="310,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#e6bd00" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_yellow" position="610,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#0064c7" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_blue" position="910,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;34" halign="right" position="1240,0" render="Label" size="400,70" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget font="Regular;34" halign="right" position="1650,0" render="Label" size="120,70" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel backgroundColor="#aaaaaa" position="10,80" size="1780,1"/>
+		<widget enableWrapAround="1" itemHeight="45" name="config" position="10,90" scrollbarMode="showOnDemand" size="1780,630"/>
+		<eLabel backgroundColor="#aaaaaa" position="10,730" size="1780,1"/>
+		<widget font="Regular;32" halign="center" position="10,740" render="Label" size="1780,180" source="help" valign="center"/>
+	</screen>
+	<screen name="PICPiconCockpit" position="center,110" size="1800,930">
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="10,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="310,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="610,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="910,5" size="300,70"/>
+		<widget backgroundColor="#f23d21" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_red" position="10,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#389416" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_green" position="310,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#e6bd00" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_yellow" position="610,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#0064c7" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_blue" position="910,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget font="Regular;34" halign="right" position="1240,0" render="Label" size="400,70" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget font="Regular;34" halign="right" position="1650,0" render="Label" size="120,70" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="preview" position="1380,100" scale="aspect" size="400,240"/>
+		<widget font="Regular;30" itemHeight="40" name="list" position="10,100" scrollbarMode="showOnDemand" size="1300,800" transparent="1"/>
+	</screen>
+	<screen name="PICPiconDownloadProgress" position="center,center" size="1220,305" title="">
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/red.svg" position="10,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/green.svg" position="310,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/yellow.svg" position="610,5" size="300,70"/>
+		<ePixmap pixmap="Default-FHD/skin_default/buttons/blue.svg" position="910,5" size="300,70"/>
+		<widget backgroundColor="#f23d21" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_red" position="10,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#389416" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_green" position="310,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#e6bd00" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_yellow" position="610,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#0064c7" font="Regular;30" foregroundColor="#ffffff" halign="center" name="key_blue" position="910,5" shadowColor="#000000" shadowOffset="-2,-2" size="300,70" transparent="1" valign="center" zPosition="1"/>
+		<eLabel backgroundColor="grey" position="10,75" size="1200,1"/>
+		<widget font="Regular;32" halign="left" name="operation" position="10,90" size="1200,43" transparent="1" valign="center"/>
+		<widget name="slider1" position="10,150" size="1200,25"/>
+		<widget font="Regular;32" halign="left" name="name" position="10,192" size="1200,43" transparent="1" valign="center"/>
+		<widget font="Regular;32" halign="left" name="status" position="10,245" size="1200,43" transparent="1" valign="center"/>
+	</screen>
+</skin>
