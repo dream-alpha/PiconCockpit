@@ -1,6 +1,6 @@
 Description: PiconCockpit
 Maintainer: dream-alpha
 Package: enigma2-plugin-extensions-piconcockpit
-Version: 5.7.2
+Version: 5.7.3
 Architecture: all
 Depends: python-twisted
